@@ -1,0 +1,43 @@
+section {
+
+   .container {
+       max-width: 1170px;
+       width: 100%;
+       background-color: rgb(94, 91, 94);
+       margin: 0 auto;
+       @include flex-props(flex, space-between, none)
+    
+         .wrapper {
+            background-image: url(../img/autumn-leaves.jpg);
+            @include sizes(800px, 500px)
+            background-repeat: no-repeat;
+            flex-direction: column;
+            margin-top: 40px;
+            @include flex-props(flex, space-evenly, center)    
+          
+            h1 {
+              color: rgb(145, 105, 56);
+              font-size: $f-size-1; 
+              font-family: $font-1;
+              transition: all 5s;
+
+              &:hover {
+                color: black
+              }
+            }
+         }
+         .right-box {
+           @include sizes(300px)
+           background-color: $color-1;
+           margin-top: 100px;
+           @include flex-props(flex,center,center)
+     
+            h2 {
+             color: blueviolet;
+             font-size: $f-size-2;
+             font-family: $font-2;
+             margin-left: 20px;
+            } 
+         }
+    }
+}

@@ -1,0 +1,10 @@
+{
+    "workbench.colorTheme": "Default Dark+"
+}
+"liveSassCompile.settings.formats": [
+    {
+      "format": "expanded",
+      "extensionName": ".css",
+      "savePath": "/css"
+    }
+  ],
